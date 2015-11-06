@@ -1,5 +1,6 @@
 var active = "home";
 var speed = 4;
+var anim = false;
 
 Node.prototype.hasClass = function(className){
     if(this.classList){
@@ -45,51 +46,63 @@ function fadeIn(el, display){
 }
 
 document.getElementById("home").addEventListener("click", function(){
-	document.getElementById(active).removeClass("active");
-	document.getElementById("home").addClass("active");
-	intev = setInterval(function(){
-		var i = Number(document.getElementById(active+"_tab").style.marginLeft.replace("px", ""));
-		document.getElementById(active+"_tab").style.marginLeft = i+speed+"px";
-		if(i+2 > window.innerWidth/1.25){
-			clearInterval(intev);
-			document.getElementById(active+"_tab").style.display = "none";
-			document.getElementById("home_tab").style.marginLeft = "0px";
-			fadeIn(document.getElementById("home_tab"));
-			active = "home";
-		}
-	}, 1);
+	if(!anim){
+		anim = true;
+		document.getElementById(active).removeClass("active");
+		document.getElementById("home").addClass("active");
+		intev = setInterval(function(){
+			var i = Number(document.getElementById(active+"_tab").style.marginLeft.replace("px", ""));
+			document.getElementById(active+"_tab").style.marginLeft = i+speed+"px";
+			if(i+2 > window.innerWidth/1.25){
+				clearInterval(intev);
+				document.getElementById(active+"_tab").style.display = "none";
+				document.getElementById("home_tab").style.marginLeft = "0px";
+				fadeIn(document.getElementById("home_tab"));
+				active = "home";
+				anim = false;
+			}
+		}, 1);
+	}
 });
 
 document.getElementById("projects").addEventListener("click", function(){
-	document.getElementById(active).removeClass("active");
-	document.getElementById("projects").addClass("active");
-	intev = setInterval(function(){
-		var i = Number(document.getElementById(active+"_tab").style.marginLeft.replace("px", ""));
-		document.getElementById(active+"_tab").style.marginLeft = i+speed+"px";
-		if(i+2 > window.innerWidth/1.25){
-			clearInterval(intev);
-			document.getElementById(active+"_tab").style.display = "none";
-			document.getElementById("projects_tab").style.marginLeft = "0px";
-			fadeIn(document.getElementById("projects_tab"));
-			active = "projects";
-		}
-	}, 1);
+	if(!anim){
+		document.getElementById(active).removeClass("active");
+		document.getElementById("projects").addClass("active");
+		anim = true;
+		intev = setInterval(function(){
+			var i = Number(document.getElementById(active+"_tab").style.marginLeft.replace("px", ""));
+			document.getElementById(active+"_tab").style.marginLeft = i+speed+"px";
+			if(i+2 > window.innerWidth/1.25){
+				clearInterval(intev);
+				document.getElementById(active+"_tab").style.display = "none";
+				document.getElementById("projects_tab").style.marginLeft = "0px";
+				fadeIn(document.getElementById("projects_tab"));
+				active = "projects";
+				anim = false;
+			}
+		}, 1);
+	}
 });
 
 document.getElementById("languages").addEventListener("click", function(){
-	document.getElementById(active).removeClass("active");
-	document.getElementById("languages").addClass("active");
-	intev = setInterval(function(){
-		var i = Number(document.getElementById(active+"_tab").style.marginLeft.replace("px", ""));
-		document.getElementById(active+"_tab").style.marginLeft = i+speed+"px";
-		if(i+2 > window.innerWidth/1.25){
-			clearInterval(intev);
-			document.getElementById(active+"_tab").style.display = "none";
-			document.getElementById("languages_tab").style.marginLeft = "0px";
-			fadeIn(document.getElementById("languages_tab"));
-			active = "languages";
-		}
-	}, 1);
+	if(!anim){
+		document.getElementById(active).removeClass("active");
+		document.getElementById("languages").addClass("active");
+		anim = true;
+		intev = setInterval(function(){
+			var i = Number(document.getElementById(active+"_tab").style.marginLeft.replace("px", ""));
+			document.getElementById(active+"_tab").style.marginLeft = i+speed+"px";
+			if(i+2 > window.innerWidth/1.25){
+				clearInterval(intev);
+				document.getElementById(active+"_tab").style.display = "none";
+				document.getElementById("languages_tab").style.marginLeft = "0px";
+				fadeIn(document.getElementById("languages_tab"));
+				active = "languages";
+				anim = false;
+			}
+		}, 1);
+	}
 });
 
 document.getElementById("lang").addEventListener("click", function(){
