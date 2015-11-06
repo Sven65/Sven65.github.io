@@ -1,4 +1,5 @@
 var active = "home";
+var speed = 4;
 
 Node.prototype.hasClass = function(className){
     if(this.classList){
@@ -48,7 +49,7 @@ document.getElementById("home").addEventListener("click", function(){
 	document.getElementById("home").addClass("active");
 	intev = setInterval(function(){
 		var i = Number(document.getElementById(active+"_tab").style.marginLeft.replace("px", ""));
-		document.getElementById(active+"_tab").style.marginLeft = i+2+"px";
+		document.getElementById(active+"_tab").style.marginLeft = i+speed+"px";
 		if(i+2 > window.innerWidth/1.25){
 			clearInterval(intev);
 			document.getElementById(active+"_tab").style.display = "none";
@@ -64,7 +65,7 @@ document.getElementById("projects").addEventListener("click", function(){
 	document.getElementById("projects").addClass("active");
 	intev = setInterval(function(){
 		var i = Number(document.getElementById(active+"_tab").style.marginLeft.replace("px", ""));
-		document.getElementById(active+"_tab").style.marginLeft = i+2+"px";
+		document.getElementById(active+"_tab").style.marginLeft = i+speed+"px";
 		if(i+2 > window.innerWidth/1.25){
 			clearInterval(intev);
 			document.getElementById(active+"_tab").style.display = "none";
@@ -80,7 +81,7 @@ document.getElementById("languages").addEventListener("click", function(){
 	document.getElementById("languages").addClass("active");
 	intev = setInterval(function(){
 		var i = Number(document.getElementById(active+"_tab").style.marginLeft.replace("px", ""));
-		document.getElementById(active+"_tab").style.marginLeft = i+2+"px";
+		document.getElementById(active+"_tab").style.marginLeft = i+speed+"px";
 		if(i+2 > window.innerWidth/1.25){
 			clearInterval(intev);
 			document.getElementById(active+"_tab").style.display = "none";
