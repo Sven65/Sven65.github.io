@@ -55,5 +55,10 @@
                 <a href="https://twitter.com/Mackan90096" title="Twitter" alt="Twitter">Twitter</a>
             </section>
         </div>
+        <script>
+            Array.prototype.random = function(){return this[Math.floor(Math.random() * ((this.length-1) - 0 + 1)) + 0];}
+
+            document.querySelector("body").style.backgroundImage = `url(images/${['one.jpg', 'two.jpg'].random()})`;
+        </script>
     </body>
 </html>
