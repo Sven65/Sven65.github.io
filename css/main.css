@@ -43,11 +43,12 @@ a{
 	color: #fff;
 	text-decoration: none;
 	padding-left: 1%;
-	padding-right: 0%;
+	padding-right: 1%;
 	-webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
+    background-color: rgba(0,0,0,0.4);
 }
 
 a:hover{
