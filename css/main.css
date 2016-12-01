@@ -15,7 +15,7 @@ html, body{
 	background-origin: padding-box!important;
 	background-attachment: scroll!important;
 	background-repeat: repeat!important;
-	background-size: auto!important;
+	background-size: cover!important;
 	background-position: left top!important;
 	max-width: 100%;
 	max-height: 100%;
