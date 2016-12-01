@@ -1,0 +1,119 @@
+<!-- Copyright © Max Thor <thormax5@gmail.com> -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf8">
+		<title>Square Chaser</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/hint.css">
+		<link rel="stylesheet" href="css/sweetalert.css">
+	</head>
+	<body>
+		<div id="statsI">
+			<span class="mItem" id="back">Back</span>
+			<br>
+			<span class="mItem">Caught <span id="stats-caught"></span> squares</span>
+			<br>
+			<span class="mItem">Played <span id="stats-played"></span> times</span>
+
+		</div>
+		<div id="game">
+			<div id="game-wrap">
+				<div id="over">GAME OVER</div>
+				<div id="highscore">New Highscore!</div>
+
+				<table>
+					<tr id="row1">
+						<td class="box" id="g1-1"> </td>
+						<td class="box" id="g1-2"> </td>
+						<td class="box" id="g1-3"> </td>
+						<td class="box" id="g1-4"> </td>
+						<td class="box" id="g1-5"> </td>
+					</tr>
+					<tr id="row2">
+						<td class="box" id="g2-1"> </td>
+						<td class="box" id="g2-2"> </td>
+						<td class="box" id="g2-3"> </td>
+						<td class="box" id="g2-4"> </td>
+						<td class="box" id="g2-5"> </td>
+					</tr>
+					<tr id="row3">
+						<td class="box" id="g3-1"> </td>
+						<td class="box" id="g3-2"> </td>
+						<td class="box" id="g3-3"> </td>
+						<td class="box" id="g3-4"> </td>
+						<td class="box" id="g3-5"> </td>
+					</tr>
+					<tr id="row4">
+						<td class="box" id="g4-1"> </td>
+						<td class="box" id="g4-2"> </td>
+						<td class="box" id="g4-3"> </td>
+						<td class="box" id="g4-4"> </td>
+						<td class="box" id="g4-5"> </td>
+					</tr>
+					<tr id="row5">
+						<td class="box" id="g5-1"> </td>
+						<td class="box" id="g5-2"> </td>
+						<td class="box" id="g5-3"> </td>
+						<td class="box" id="g5-4"> </td>
+						<td class="box" id="g5-5"> </td>
+					</tr>
+				</table>
+				<br>
+				<span>Score: <span id="score">0</span></span>
+				<br>
+				<span>Time Left: <span id="time">00:00</span></span>
+			</div>
+		</div>
+		<div id="menu">
+			<span class="mItem" id="easy">Easy</span>
+			<br>
+			<span class="mItem selected" id="medium">Medium</span>
+			<br>
+			<span class="mItem" id="hard">Hard</span>
+			<br>
+			<span class="mItem" id="extreme">Extreme</span>
+			<br>
+			<span class="mItem" id="uber">Uber</span>
+			<br>
+			<span class="mItem" id="stats">Stats</span>
+			<br>
+			<span class="mItem" id="time-select"><span id="tim">60</span></span>
+		</div>
+
+		<div id="controls">
+			<hr>
+			<div class="grid" id="movement">
+				<h2>Movement</h2>
+				<span class="hint--top" data-hint="Move selection up"><img src="img/keyboard/Keyboard_Black_Arrow_Up.png" alt="Arrow Up"></span>
+				<span class="hint--top" data-hint="Move selection down"><img src="img/keyboard/Keyboard_Black_Arrow_Down.png" alt="Arrow Down"></span>
+				<span class="hint--top" data-hint="Move selection left"><img src="img/keyboard/Keyboard_Black_Arrow_Left.png" alt="Arrow Left"></span>
+				<span class="hint--top" data-hint="Move selection right"><img src="img/keyboard/Keyboard_Black_Arrow_Right.png" alt="Arrow Right"></span>
+				<br>
+				<span class="hint--top" data-hint="Move selection with the dpad"><img src="img/xbox/360_Dpad.png" alt="Dpad"></span>
+				<span class="hint--top" data-hint="Move selection with the left stick"><img src="img/xbox/360_Left_Stick.png" alt="Left Stick"></span>
+				<span class="hint--top" data-hint="Move selection with the right stick"><img src="img/xbox/360_Right_Stick.png" alt="Right Stick"></span>
+			</div>
+			<div class="grid" id="select">
+				<h2>Actions</h2>
+				<span class="hint--top" data-hint="Select with enter"><img src="img/keyboard/Keyboard_Black_Enter.png" alt="Enter"></span>
+				<span class="hint--top" data-hint="Select with space"><img src="img/keyboard/Keyboard_Black_Space.png" alt="Spacebar"></span>
+				<span class="hint--top" data-hint="Select with the A button"><img src="img/xbox/360_A.png" alt="A"></span>
+				<span class="hint--top" data-hint="Go back"><img src="img/xbox/360_B.png" alt="B"></span>
+				<br>
+				<span class="hint--top" data-hint="Save"><img src="img/xbox/360_X.png" alt="X"></span>
+				<span class="hint--top" data-hint="Save"><img src="img/keyboard/Keyboard_Black_X.png" alt="X"></span>
+				<br>
+				<span class="hint--top" data-hint="Load"><img src="img/xbox/360_Y.png" alt="Y"></span>
+				<span class="hint--top" data-hint="Load"><img src="img/keyboard/Keyboard_Black_Y.png" alt="Y"></span>
+
+			</div> 
+		</div>
+
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/sweetalert.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

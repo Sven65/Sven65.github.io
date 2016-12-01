@@ -1,0 +1,15 @@
+body, html {
+    margin: 0;
+    background-color: #31708F;
+    height: 100%;
+    color: #fff;
+}
+
+#container{
+	text-align: center;
+}
+
+span{
+	font-size: 20px;
+}
+

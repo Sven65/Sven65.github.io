@@ -1,0 +1,224 @@
+/* Copyright © Max Thor <thormax5@gmail.com> */
+
+@font-face{
+	font-family: Arcade;
+    src: url("../fonts/ka1.ttf");
+}
+
+@font-face{
+	font-family: Joystick;
+    src: url("../fonts/joystick.ttf");
+}
+
+html, body{
+	background-color: #555;
+	font-family: "Arcade";
+}
+
+@keyframes select_anim_green {
+  from{
+    color: #1BB91B;
+  }
+
+  50%{
+  	color: #00FF00;
+  }
+
+  to{
+  	color: #1BB91B;
+  }
+}
+
+@keyframes select_anim_red {
+  from{
+    color: #C30000;
+  }
+
+  50%{
+  	color: #FF0000;
+  }
+
+  to{
+  	color: #C30000;
+  }
+}
+
+@keyframes select_anim_blue {
+  from{
+    color: #00F1FF;
+  }
+
+  50%{
+  	color: #0000FF;
+  }
+
+  to{
+  	color: #00F1FF;
+  }
+}
+
+#menu, #settings-menu, #statsI{
+	max-width: 50%;
+    margin: auto;
+    font-size: 4em;
+    text-align: center;
+}
+
+.selected{
+	color: #00FF00;
+	animation-duration: 1s;
+ 	animation-name: select_anim_green;
+ 	animation-iteration-count: infinite;
+}
+
+#game{
+    text-align: center;
+    height: 100%;
+    max-width: 18%;
+    margin: auto;
+    font-family: "Joystick";
+}
+
+.green{
+	background-color: #00FF00;
+}
+
+.yellow{
+	background-color: #C0FF00;
+}
+
+.blue{
+	background-color: #0000FF;
+}
+
+.red{
+	background-color: #FF0000;
+}
+
+#game-wrap{
+	text-align: -webkit-center;
+	text-align: center;
+}
+
+.box{
+	border: 1px solid #000;
+	width: 50px;
+	height: 50px;
+}
+
+.box-select{
+	border-color: #FF0000;
+}
+
+#over{
+	color: red;
+}
+
+#time-select{
+	font-family: "Joystick";
+}
+
+#controls{
+	max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#controls > hr{
+	color: #615E5E;
+    border: 1px solid;
+}
+
+#movement > span{
+	font-family: "Joystick" !important;
+}
+
+#select > span{
+	font-family: "Joystick" !important;
+}
+
+#highscore{
+	color: #00FF00;
+}
+
+#codeIn{
+	text-align: center;
+	background-color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 478px;
+    padding: 17px;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -256px;
+    margin-top: -200px;
+    overflow: hidden;
+    display: none;
+    z-index: 99999;
+}
+
+#codeIn > input{
+	display: block;
+	width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    height: 43px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+    font-size: 18px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.06);
+    padding: 0 12px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#codeIn > button{
+	display: inline-block;
+    box-shadow: rgba(140, 212, 245, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset;
+    background-color: #8CD4F5;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 500;
+    -webkit-border-radius: 4px;
+    border-radius: 5px;
+    padding: 10px 32px;
+    margin: 26px 5px 0 5px;
+    cursor: pointer;
+}
+
+.disabled.selected{
+	color: #FF0000;
+	animation-duration: 1s;
+ 	animation-name: select_anim_red;
+ 	animation-iteration-count: infinite;
+}
+
+.achievement{
+    max-width: 12%;
+    width: 12%;
+    height: 17%;
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    text-align: center;
+    font-family: "Joystick";
+}
+
+.insetshadow{
+    color: #202020;
+    background-color: #2d2d2d;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #111111, 2px 2px 1px #363636;
+}
+
+.retroshadow{
+    color: #2c2c2c;
+    background-color: #d5d5d5;
+    letter-spacing: .05em;
+    text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+}
