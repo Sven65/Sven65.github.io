@@ -49,7 +49,7 @@
 			Array.prototype.random = function(){return this[Math.floor(Math.random() * ((this.length-1) - 0 + 1)) + 0];}
 
 			let request = new XMLHttpRequest();
-			request.open('GET', '/ones.json', true);
+			request.open('GET', 'ones.json', true);
 
 			request.onload = function() {
 				if(request.status >= 200 && request.status < 400){
