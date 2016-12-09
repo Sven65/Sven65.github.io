@@ -1,4 +1,4 @@
-// Copyright © Max Thor <thormax5@gmail.com>
+// Copyright © Mackan <thormax5@gmail.com>
 
 var s = 0; // State
 var diff = "medium"; // Diffculty
