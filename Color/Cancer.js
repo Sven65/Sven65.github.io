@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	setInterval(() => {
 		if(shouldRun){
 			let color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-			document.getElementById("memes").innerHTML = color;
+			document.getElementById("color").innerHTML = color;
 			document.getElementById("body").style.backgroundColor = color;
 		}
 	}, 1500)
