@@ -204,18 +204,16 @@ a:hover{
 }
 
 .md-show.md-effect .md-content {
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
 	opacity: 1;
 }
 
-/* Grid stuff lol */
-/*
-.grid-list{
-	display: table-cell;
-	padding-left: 5%;
-	padding-right: 5%;
+/* Media Query shit */
+
+@media(min-width: 461px){
+	.md-show.md-effect .md-content {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
 }
-*/
