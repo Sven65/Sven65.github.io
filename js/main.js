@@ -24,7 +24,7 @@ let modal = document.querySelector("#modal")
 
 function openModal(){
 	addClass(modal, 'md-show')
-	document.querySelectorAll(".themecolor").forEach(function(a => {a.content = "#8f1b0f"})
+	document.querySelectorAll(".themecolor").forEach(a => {a.content = "#8f1b0f"})
 }
 
 function closeModal(){
