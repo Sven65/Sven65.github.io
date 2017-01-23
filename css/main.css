@@ -218,7 +218,7 @@ a:hover{
 	}
 }
 
-@media(max-width: 320px){
+@media(max-width: 360px){
 	.md-effect .md-content {
 		-webkit-transform: scale(0.7);
 		-moz-transform: scale(0.7);
