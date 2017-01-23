@@ -1,64 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    
-        <!-- Regular Meta Tags because we apparently need those -->
+	<head>
+	
+		<!-- Regular Meta Tags because we apparently need those -->
 
-        <meta name="theme-color" content="#090909">
-        <meta name="msapplication-navbutton-color" content="#090909">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Mackan">
-            
-        <meta name="description" content="Mackan's Homepage">
-        <meta nane="title" content="Mackan - Home">
-    
+		<meta name="theme-color" content="#090909">
+		<meta name="msapplication-navbutton-color" content="#090909">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Mackan">
+			
+		<meta name="description" content="Mackan's Homepage">
+		<meta nane="title" content="Mackan - Home">
+	
 
-        <!-- Some OG tags because why not -->
+		<!-- Some OG tags because why not -->
 
-        <meta content="Mackan's Homepage" property="og:description">
-        <meta content="Mackan - Home" property="og:title">
-        <meta content="logo.png" property="og:image">
-        <meta content="image/png" property="og:image:type">
-        <meta content="292" property="og:image:width">
-        <meta content="256" property="og:image:heigth">
-        <meta content="http://Sven65.github.io" property="og:url">
-        <meta content="Mackan's Homepage" property="og:site_name">
-        <meta content="en_GB" property="og:locale">
+		<meta content="Mackan's Homepage" property="og:description">
+		<meta content="Mackan - Home" property="og:title">
+		<meta content="logo.png" property="og:image">
+		<meta content="image/png" property="og:image:type">
+		<meta content="292" property="og:image:width">
+		<meta content="256" property="og:image:heigth">
+		<meta content="http://Sven65.github.io" property="og:url">
+		<meta content="Mackan's Homepage" property="og:site_name">
+		<meta content="en_GB" property="og:locale">
 
-        <!-- And some shit for twitter maybe? -->
+		<!-- And some shit for twitter maybe? -->
 
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="http://Sven65.github.io">
-        <meta name="twitter:title" content="Mackan - Home">
-        <meta name="twitter:description" content="Mackan's Homepage">
-        <meta name="twitter:image" content="logo.png">
-        <meta name="twitter:image:type" content="image/png">
-        <meta name="twitter:image:width" content="292">
-        <meta name="twitter:image:height" content="256">
-        <meta name="twitter:creator" content="@Mackan90096">
-        <meta name="twitter:site" content="@Mackan90096">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:url" content="http://Sven65.github.io">
+		<meta name="twitter:title" content="Mackan - Home">
+		<meta name="twitter:description" content="Mackan's Homepage">
+		<meta name="twitter:image" content="logo.png">
+		<meta name="twitter:image:type" content="image/png">
+		<meta name="twitter:image:width" content="292">
+		<meta name="twitter:image:height" content="256">
+		<meta name="twitter:creator" content="@Mackan90096">
+		<meta name="twitter:site" content="@Mackan90096">
 
-        <link rel="icon" type="image/png" href="logo.png">
-        <title>Mackan - Home</title>
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
-    <body>
-        <div id="main-content">
-            <h1 class="header">Mackan</h1>
-            <section class="links">
-                <a href="https://github.com/Sven65" title="Github" alt="Github">Github</a>
-                <a href="https://discorddungeons.me" title="Discord Dungeons" alt="Discord Dungeons">Discord Dungeons</a>
-                <a href="https://twitter.com/Mackan90096" title="Twitter" alt="Twitter">Twitter</a>
-            </section>
-        </div>
-        <script>
-            Array.prototype.random = function(){return this[Math.floor(Math.random() * ((this.length-1) - 0 + 1)) + 0];}
-
-            document.querySelector("body").style.backgroundImage = `url(images/${['one.jpg', 'two.jpg'].random()})`;
-        </script>
-    </body>
+		<link rel="icon" type="image/png" href="logo.png">
+		<title>Mackan - Home</title>
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="./css/flexboxgrid.min.css">
+	</head>
+	<body>
+		<div id="main-content">
+			<h1 class="header">Mackan</h1>
+			<section class="links">
+				<a href="https://github.com/Sven65" title="Github" alt="Github">Github</a>
+				<a href="https://discorddungeons.me" title="Discord Dungeons" alt="Discord Dungeons">Discord Dungeons</a>
+				<a href="https://twitter.com/Mackan90096" title="Twitter" alt="Twitter">Twitter</a>
+				<a href="#" title="Languages" alt="Languages" id="languages">Languages</a>
+			</section>
+		</div>
+		<div class="md-modal md-effect" id="modal">
+			<div class="md-content">
+				<h3>Knowledge</h3>
+				<div class="grid-container row">
+					<div class="grid-list col-xs col-sm col-md col-lg">
+						<h4>Languages</h4>
+						<ul>
+							<li>Javascript</li>
+							<li>Python</li>
+							<li>HTML</li>
+							<li>XAML</li>
+							<li>PHP</li>
+							<li>CSS</li>
+							<li>Markdown</li>
+							<li>Java</li>
+							<li>Ruby</li>
+							<li>Lua</li>
+							<li>Go</li>
+							<li>Visual Basic</li>
+							<li>C#</li>
+						</ul>
+					</div>
+					<div class="grid-list col-xs col-sm col-md col-lg">
+						<h4>Frameworks/Libraries</h4>
+						<ul>
+							<li>Bootstrap</li>
+							<li>jQuery</li>
+							<li>Node.js</li>
+							<li>Express</li>
+							<li>React.js</li>
+						</ul>
+					</div>
+					<div class="grid-list col-xs col-sm col-md col-lg">
+						<h4>Other</h4>
+						<ul>
+							<li>SQL</li>
+							<li>RethinkDB</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs col-sm col-md col-lg">
+						<button class="md-close">Close me!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="md-overlay"></div>
+		<script src="js/main.js"></script>
+	</body>
 </html>
