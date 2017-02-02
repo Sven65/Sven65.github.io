@@ -53,6 +53,6 @@ main > .content {
 }
 
 .vertical-line.left{
-	border-left: 1px solid #555;
-	padding-left: 3%;
+	border-right: 1px solid #555;
+	padding-right: 5%;
 }
