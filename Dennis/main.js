@@ -21,6 +21,18 @@ function getJson(url){
 	})
 }
 
+function getQuote(quotes){
+	return Math.floor(Math.random() * ((quotes.length-1) - 0 + 1)) + 0
+}
+
 getJson('./quotes.json').then(quotes => {
-	document.querySelector("#quote").innerHTML = quotes[Math.floor(Math.random() * ((quotes.length-1) - 0 + 1)) + 0];
+	let q = getQuote(quotes)
+
+	while(localStorage.q === q){
+		q = getQuote(quotes)
+	}
+
+	localStorage.q = q
+
+	document.querySelector("#quote").innerHTML = quotes[q];
 })
