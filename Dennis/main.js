@@ -26,10 +26,11 @@ function getQuote(quotes){
 }
 
 getJson('./quotes.json').then(quotes => {
-	let q = getQuote(quotes)
+	let q = localStorage.q||-1;
+	q++;
 
-	while(localStorage.q === q){
-		q = getQuote(quotes)
+	if(q > quotes.length){
+		q = 0
 	}
 
 	localStorage.q = q
