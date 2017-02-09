@@ -1,3 +1,10 @@
+var random = false;
+var checkbox = document.querySelector("#random")
+
+var isChecked = (localStorage.random == 'true');
+
+checkbox.checked = isChecked
+
 function getJson(url){
 	return new Promise((resolve, reject) => {
 		let request = new XMLHttpRequest();
@@ -26,14 +33,28 @@ function getQuote(quotes){
 }
 
 getJson('./quotes.json').then(quotes => {
-	let q = localStorage.q||-1;
-	q++;
+	if(isChecked){
+		let q = getQuote(quotes)
 
-	if(q >= quotes.length){
-		q = 0
+		while(localStorage.q == q){
+			q = getQuote(q)
+		}
+	}else{
+		let q = localStorage.q||-1;
+		q++;
+
+		if(q >= quotes.length){
+			q = 0
+		}
 	}
 
 	localStorage.q = q
 
 	document.querySelector("#quote").innerHTML = quotes[q];
+})
+
+checkbox.addEventListener('change', () => {
+	random = checkbox.checked;
+	localStorage.random = random
+	console.log(checkbox.checked)
 })
