@@ -29,7 +29,7 @@ getJson('./quotes.json').then(quotes => {
 	let q = localStorage.q||-1;
 	q++;
 
-	if(q > quotes.length){
+	if(q >= quotes.length){
 		q = 0
 	}
 
