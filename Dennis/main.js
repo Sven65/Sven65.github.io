@@ -33,14 +33,15 @@ function getQuote(quotes){
 }
 
 getJson('./quotes.json').then(quotes => {
+	let q = 0;
 	if(isChecked){
-		let q = getQuote(quotes)
+		q = getQuote(quotes)
 
 		while(localStorage.q == q){
 			q = getQuote(q)
 		}
 	}else{
-		let q = localStorage.q||-1;
+		q = localStorage.q||-1;
 		q++;
 
 		if(q >= quotes.length){
