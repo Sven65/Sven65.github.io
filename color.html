@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>wtf</title>
+		<style>
+
+		body, html{
+			max-width: 100%;
+			line-height: 20px;
+			margin: 0;
+		}
+
+			.box{
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+
+		<script>
+			var current = 0x000000;
+			let boxAmount = 0;
+			setInterval(function(){
+
+				let box = `<div class="box" style="background-color: #${current.toString(16)};">&nbsp;</div>`;
+
+				let body = document.querySelector("body");
+
+				body.innerHTML += box;
+				body.scrollTop = body.scrollHeight;
+
+				current += 0x0000001;
+				boxAmount++;
+			}, 1)
+		</script>
+	</body>
+</html>
