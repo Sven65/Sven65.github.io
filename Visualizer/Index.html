@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Regular Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Mackan">
+			
+		<meta name="description" content="A JS music visualizer">
+		<meta nane="title" content="Mackan - Visualizer">
+	
+
+		<!-- Some OG tags because why not -->
+
+		<meta content="A JS music visualizer" property="og:description">
+		<meta content="Mackan - Visualizer" property="og:title">
+		<meta content="logo.png" property="og:image">
+		<meta content="image/png" property="og:image:type">
+		<meta content="292" property="og:image:width">
+		<meta content="256" property="og:image:heigth">
+		<meta content="https://mackan.xyz/Visualizer" property="og:url">
+		<meta content="Mackan's Homepage" property="og:site_name">
+		<meta content="en_GB" property="og:locale">
+
+		<!-- And twitter maybe? -->
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:url" content="https://mackan.xyz/Visualizer">
+		<meta name="twitter:title" content="Mackan - Visualizer">
+		<meta name="twitter:description" content="A JS music visualizer">
+		<meta name="twitter:image" content="logo.png">
+		<meta name="twitter:image:type" content="image/png">
+		<meta name="twitter:image:width" content="292">
+		<meta name="twitter:image:height" content="256">
+		<meta name="twitter:creator" content="@Mackan90096">
+		<meta name="twitter:site" content="@Mackan90096">
+
+		<link rel="icon" type="image/png" href="logo.png">
+		<title>Mackan - Visualizer</title>
+		<link rel="stylesheet" href="./css/main.css">
+	</head>
+	<body>
+		<div class="center">
+			<audio src="./Audio.mp3" autoplay="true" crossorigin="anonymous"></audio>
+		</div>
+		<div class="controls">
+			<input type="range" id="redRange" min="0" value="256" max="256" step="1">
+			<p id="red">R: 255</p>
+
+			<input type="range" id="greenRange" min="0" value="256" max="256" step="1">
+			<p id="green">G: 255</p>
+
+			<input type="range" id="blueRange" min="0" value="256" max="256" step="1">
+			<p id="blue">B: 255</p>
+		</div>
+		<script src="js/d3.js"></script>
+		<script src="js/Visualize.js"></script>
+	</body>
+</html>
