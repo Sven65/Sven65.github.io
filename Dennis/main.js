@@ -32,6 +32,14 @@ function getQuote(quotes){
 	return Math.floor(Math.random() * ((quotes.length-1) - 0 + 1)) + 0
 }
 
+function addClass(el, className){
+	if (el.classList){
+		el.classList.add(className);
+	}else{
+		el.className += ' ' + className;
+	}
+}
+
 getJson('./quotes.json').then(quotes => {
 	let q = 0;
 	if(isChecked){
@@ -52,6 +60,8 @@ getJson('./quotes.json').then(quotes => {
 	localStorage.q = q
 
 	document.querySelector("#quote").innerHTML = quotes[q];
+
+	addClass(document.querySelector("#quote"), "show")
 })
 
 checkbox.addEventListener('change', () => {
