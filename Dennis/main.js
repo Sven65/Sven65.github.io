@@ -2,8 +2,28 @@ var random = false;
 var checkbox = document.querySelector("#random")
 
 var isChecked = (localStorage.random == 'true');
+var removeStylish = (localStorage.removeStylish == 'true');
 
 checkbox.checked = isChecked
+
+if(removeStylish){
+	document.querySelector("#stylish-css").remove()
+}
+
+function toggleStyle(){
+	removeStylish = !removeStylish;
+	localStorage.removeStylish = removeStylish;
+	if(removeStylish){
+		document.querySelector("#stylish-css").remove()
+	}else{
+		var head = document.getElementsByTagName('head')[0];
+		var link = document.createElement('link');
+		link.id = 'stylish-css';
+		link.rel = 'stylesheet';
+		link.href = './Styled.css';
+		head.appendChild(link);
+	}
+}
 
 function getJson(url){
 	return new Promise((resolve, reject) => {
