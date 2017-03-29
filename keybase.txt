@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/mackan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mackan.xyz
+  * I am mackan (https://keybase.io/mackan) on keybase.
+  * I have a public key with fingerprint 3E27 65D9 1E24 80D8 2669  6419 2958 6ADB 7A52 DEC7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101e2f2f30984d49b66efb4681b71657375deabe11cf8068b8cd1c78a29e848ce690a",
+            "fingerprint": "3e2765d91e2480d82669641929586adb7a52dec7",
+            "host": "keybase.io",
+            "key_id": "29586adb7a52dec7",
+            "kid": "0101e2f2f30984d49b66efb4681b71657375deabe11cf8068b8cd1c78a29e848ce690a",
+            "uid": "2663c5015e9695e4beb4ce86293fc319",
+            "username": "mackan"
+        },
+        "service": {
+            "hostname": "mackan.xyz",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1490802565,
+    "expire_in": 157680000,
+    "prev": "4394dd5d05bfb578a9e1366cde2e5b9b2a962ed95a51f83d747b26db512b1b05",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.68
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJbSBVBGD5qKhqFmFmUGC0iCcfTzuzO7M5BQgijMpEOGVnWYWdnjmdR
+95zOWW+ZId2wi6UhiZSoT4HVQ5JQVGJmERWWIZj1EBVUTwY92O2hZrs8BD02L8N8
+833f//0//8SiJE96wqlif+bNY5t6Ex7e7q737Hgxc6RFohHWLPlbpBr+8+K1jMed
+YI3FJL8kAxlwGIIhRSa6ylRCMeYhqmIdUA1gpCkaYtygHAAzpMtYp7rJgKnpBiRc
+V3WTYyIbklcKWXY1j0Vjlu0IW4VDDSNGhLeqy0yHGBOsAgIJ0rHBqGYgyLipCWE4
+EncVIhw14txnRQQmHsGf8f7B/8+563/VwVgxkQwQJ5ggrlJOVZPrGBIlZCqAuMQ4
+j9lGHRfsOsOsMWyp1SsJrMEyuTtWt4+//n1NzfuELhqLOBEzUivwsONE435X5zRH
+XWIjp8HfFkFq2UzMUCgaeCxuRWzJDwTTdCzXE6hE1mWIMPJKvClqxXjQchlIw7os
+jluHNwhLVSEqY4jJiIYoEv0SDhSMTcYhR5RQaBAMOSPIQCCkK0xTNQoxowhACqiM
+JLepvXZEeCsip1EtPONWtW049TEutY6PVS3wJKR7UpIT3eXypKdl/Fm5zHup38Nz
++Y/WlG65ATsu13d39g/0PhvIDF4/g2uTGtPal04mbJwuKMxOLXrwAMrji3IrV6Ha
+lf2jH0dWPEwvzelsUZrNidGkJYHpeyA7r6Kvanj+Ujf5Gp3Nn3zjLSpMe9QTPpjy
+piIjI3arbPn0quDK1vmTFw83jnF1buplydYp7+pdh/oOwC/BzizpWkDOu1VRWO17
+zxas/WTdLUmu2nZoeGdSR9n+ZXnjCw8O7XnyIad4Yv7qzPn2xrdkQ0vx+kGf05+7
++1ui50p5YHOg68TrcPs5e+/s4IXhLi16JWtfrnV8cc3zx7P3q0YqR9f5So6+C/QU
+LLvzdHvb5/JXI6kZZ0+3Df0AvXE00g==
+=ZjeY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mackan
+
+==================================================================
