@@ -79,7 +79,7 @@ getJson('./Things.json').then(things => {
 
 	localStorage.q = q
 
-	document.querySelector("#thing").innerHTML = quotes[q];
+	document.querySelector("#thing").innerHTML = things[q];
 
 	addClass(document.querySelector("#thing"), "show")
 })
