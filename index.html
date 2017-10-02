@@ -46,65 +46,33 @@
 		<title>Mackan - Home</title>
 		<link rel="stylesheet" href="./css/main.css">
 		<link rel="stylesheet" href="./css/flexboxgrid.min.css">
+		<link rel="stylesheet" href="./css/icons.css">
 	</head>
 	<body>
-		<div id="main-content">
-			<h1 class="header">Mackan</h1>
-			<section class="links">
-				<a href="https://github.com/Sven65" title="Github" alt="Github">Github</a>
-				<a href="https://discorddungeons.me" title="Discord Dungeons" alt="Discord Dungeons">Discord Dungeons</a>
-				<a href="https://twitter.com/Mackan90096" title="Twitter" alt="Twitter">Twitter</a>
-				<a href="#" title="Languages" alt="Languages" id="languages">Languages</a>
+		<div class="darken"></div>
+		<div class="main">
+			<section class="user-profile">
+				<img class="user-image" src="https://randomuser.me/api/portraits/men/0.jpg" alt="Me" />
+				<h1 class="user-name">Mackan</h1>
+				<section class="user-links">
+					<div class="link-container">
+						<a href="#" class="link github-link" data-title="Github"><i class="icon-github"></i></a>
+					</div>
+
+					<div class="link-container">
+						<a href="#" class="link twitter-link" data-title="Twitter"><i class="icon-twitter"></i></a>
+					</div>
+
+					<div class="link-container">
+						<a href="#" class="link reddit-link" data-title="Reddit"><i class="icon-reddit"></i></a>
+					</div>
+
+					<div class="link-container">
+						<a href="#" class="link projects-link" data-title="Projects"><i class="icon-embed2"></i></a>
+					</div>
+				</section>
 			</section>
 		</div>
-		<div class="md-modal md-effect" id="modal">
-			<div class="md-content">
-				<h3>Knowledge</h3>
-				<div class="grid-container row">
-					<div class="grid-list col-xs col-sm col-md col-lg">
-						<h4>Languages</h4>
-						<ul>
-							<li>Javascript</li>
-							<li>Python</li>
-							<li>HTML</li>
-							<li>XAML</li>
-							<li>PHP</li>
-							<li>CSS</li>
-							<li>Markdown</li>
-							<li>Java</li>
-							<li>Ruby</li>
-							<li>Lua</li>
-							<li>Go</li>
-							<li>Visual Basic</li>
-							<li>C#</li>
-						</ul>
-					</div>
-					<div class="grid-list col-xs col-sm col-md col-lg">
-						<h4>Frameworks/Libraries</h4>
-						<ul>
-							<li>Bootstrap</li>
-							<li>jQuery</li>
-							<li>Node.js</li>
-							<li>Express</li>
-							<li>React.js</li>
-						</ul>
-					</div>
-					<div class="grid-list col-xs col-sm col-md col-lg">
-						<h4>Other</h4>
-						<ul>
-							<li>SQL</li>
-							<li>RethinkDB</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs col-sm col-md col-lg">
-						<button class="md-close">Close me!</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="md-overlay"></div>
-		<script src="js/main.js"></script>
+		<!--<script src="js/main.js"></script>-->
 	</body>
 </html>
