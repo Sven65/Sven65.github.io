@@ -10,7 +10,7 @@
 html, body{
 	width: 100%;
 	height: 100%;
-	background-image: url(https://cdn.discordapp.com/attachments/251278926985429004/364106855439663106/Shruck.png);
+	background-image: url(../images/bg.jpg);
 	background-clip: border-box!important;
 	background-origin: padding-box!important;
 	background-attachment: scroll!important;
@@ -158,4 +158,9 @@ html, body{
 	opacity: 1;
 	transition: opacity 0.5s, visibility 0.5s;
 	-webkit-transition: opacity 0.5s, visibility 0.5s;
+}
+
+.projects{
+	background: #424242;
+	width: 100%;
 }
