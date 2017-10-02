@@ -10,7 +10,7 @@
 html, body{
 	width: 100%;
 	height: 100%;
-	background-image: url(../images/one.jpg);
+	background-image: url(https://cdn.discordapp.com/attachments/251278926985429004/364106855439663106/Shruck.png);
 	background-clip: border-box!important;
 	background-origin: padding-box!important;
 	background-attachment: scroll!important;
@@ -61,10 +61,10 @@ html, body{
     text-decoration: none;
     color: #fff;
     background: #212121;
-    padding: 1%;
+    padding: 1.2%;
+    border-radius: 50%;
     -webkit-transition: background 1s, color 0.5s;
     transition: background 1s, color 0.5s;
-    border-radius: 50%;
 
 }
 
@@ -77,20 +77,28 @@ html, body{
 .link:hover{
 	background: #FAFAFA;
 	color: #000;
+	-webkit-transition: background 1s, color 0.5s;
+    transition: background 1s, color 0.5s;
 }
 
 .twitter-link:hover{
 	color: #01579B;
+	-webkit-transition: background 1s, color 0.5s;
+    transition: background 1s, color 0.5s;
 }
 
 .reddit-link:hover{
 	color: #E65100;
+	-webkit-transition: background 1s, color 0.5s;
+    transition: background 1s, color 0.5s;
 }
 
 [data-tooltip]{
 	position: relative;
 	z-index: 2;
 	cursor: pointer;
+	transition: opacity 0.5s, background 1s, color 0.5s;
+	-webkit-transition: opacity 0.5s, background 1s, color 0.5s;
 }
 
 [data-tooltip]:before, [data-tooltip]:after{
@@ -99,6 +107,8 @@ html, body{
 	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
 	opacity: 0;
 	pointer-events: none;
+	transition: opacity 0.5s, visibility 0.5s;
+	-webkit-transition: opacity 0.5s, visibility 0.5s;
 }
 
 
@@ -120,6 +130,8 @@ html, body{
 	text-align: center;
 	font-size: 14px;
 	line-height: 1.2;
+	-webkit-transition: opacity 0.5s, visibility 0.5s, background 1s, color 0.5s;
+    transition: opacity 0.5s, visibility 0.5s, background 1s, color 0.5s;
 }
 
 [data-tooltip]:after{
@@ -135,6 +147,8 @@ html, body{
 	content: " ";
 	font-size: 0;
 	line-height: 0;
+	-webkit-transition: opacity 0.5s, visibility 0.5s, background 1s, color 0.5s;
+    transition: opacity 0.5s, visibility 0.5s, background 1s, color 0.5s;
 }
 
 [data-tooltip]:hover:before, [data-tooltip]:hover:after{
@@ -142,4 +156,6 @@ html, body{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
 	opacity: 1;
+	transition: opacity 0.5s, visibility 0.5s;
+	-webkit-transition: opacity 0.5s, visibility 0.5s;
 }
