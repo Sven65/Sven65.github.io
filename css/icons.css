@@ -24,8 +24,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-embed:before {
+  content: "\ea7f";
+}
 .icon-embed2:before {
   content: "\ea80";
+}
+.icon-terminal:before {
+  content: "\ea81";
 }
 .icon-twitter:before {
   content: "\ea96";
