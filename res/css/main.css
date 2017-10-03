@@ -196,6 +196,7 @@ html, body{
 @media(min-width:320px){
 	.card{
 		width: 45%;
+		height: fit-content;
 	}
 }
 
