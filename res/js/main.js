@@ -1,6 +1,6 @@
 Array.prototype.random = function(){return this[Math.floor(Math.random() * ((this.length-1) - 0 + 1)) + 0];}
 
-document.querySelector("body").style.backgroundImage = `url(images/${['one.jpg', 'two.jpg'].random()})`;
+//document.querySelector("body").style.backgroundImage = `url(images/${['one.jpg', 'two.jpg'].random()})`;
 
 function removeClass(el, className){
 	if (el.classList){
