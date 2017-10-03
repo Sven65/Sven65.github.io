@@ -22,16 +22,19 @@ html, body{
 	margin: 0;
 }
 
-.main{
+.main, .projects-main{
 	text-align: center;
 	color: #FFF;
-	height: 50%;
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
 	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.main{
+	height: 50%;
 }
 
 .darken{
@@ -48,7 +51,7 @@ html, body{
 	height: 10%;
 }
 
-.user-name{
+.user-name, .project-header{
 	font-size: 4vh;
 }
 
@@ -160,7 +163,46 @@ html, body{
 	-webkit-transition: opacity 0.5s, visibility 0.5s;
 }
 
+.card {
+	background: #fff;
+	border-radius: 2px;
+	display: inline-block;
+	height: 300px;
+	margin: 1rem;
+	position: relative;
+	width: 300px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
 .projects{
-	background: #424242;
 	width: 100%;
 }
+
+.project-container{
+	width: 25%;
+	display: inline-block;
+}
+
+.project-link{
+	text-decoration: none;
+	color: #fff;
+}
+
+.project-image{
+	width: 100%;
+	height: 100%;
+}
+
+@media(min-width:320px){
+	.card{
+		width: 45%;
+	}
+}
+
+@media (min-width:961px)  {
+	.card{
+		width: 25%;
+	}
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
