@@ -203,6 +203,7 @@ html, body{
 @media (min-width:961px)  {
 	.card{
 		width: 25%;
+		height: fit-content;
 	}
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
