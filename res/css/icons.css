@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-question:before {
+  content: "\f128";
+}
 .icon-embed:before {
   content: "\ea7f";
 }

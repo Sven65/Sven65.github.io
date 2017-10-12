@@ -20,6 +20,9 @@ html, body{
 	max-width: 100%;
 	max-height: 100%;
 	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .main, .projects-main{
@@ -28,9 +31,7 @@ html, body{
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-	font-family: 'Raleway', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	
 }
 
 .main{
@@ -207,3 +208,31 @@ html, body{
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+/** 404 */
+
+.center{
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.text-404{
+	color: #fff;
+	display: inline-block;
+	top: 25%;
+	position: relative;
+}
+
+.back-404{
+	text-decoration: none;
+	color: #fff;
+	font-size: 2vh;
+}
+
+.back-404:hover{
+	color: #000;
+}
