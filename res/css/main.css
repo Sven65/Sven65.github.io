@@ -64,8 +64,6 @@ html, body{
 	font-size: 4vh;
     text-decoration: none;
     color: #fff;
-    background: #212121;
-    padding: 1.2%;
     border-radius: 50%;
     -webkit-transition: background 1s, color 0.5s;
     transition: background 1s, color 0.5s;
@@ -79,7 +77,6 @@ html, body{
 }
 
 .link:hover{
-	background: #FAFAFA;
 	color: #000;
 	-webkit-transition: background 1s, color 0.5s;
     transition: background 1s, color 0.5s;
@@ -93,6 +90,12 @@ html, body{
 
 .reddit-link:hover{
 	color: #E65100;
+	-webkit-transition: background 1s, color 0.5s;
+    transition: background 1s, color 0.5s;
+}
+
+.github-link:hover, .projects-link:hover{
+	color: #6e5494;
 	-webkit-transition: background 1s, color 0.5s;
     transition: background 1s, color 0.5s;
 }
