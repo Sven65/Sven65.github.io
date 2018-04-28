@@ -121,8 +121,8 @@ html, body{
 
 [data-tooltip]:before{
 	position: absolute;
-	bottom: 150%;
-	left: 50%;
+	bottom: -100%;
+	left: 25%;
 	margin-bottom: 5px;
 	margin-left: -80px;
 	padding: 7px;
@@ -132,28 +132,12 @@ html, body{
 	border-radius: 3px;
 	background-color: #000;
 	background-color: hsla(0, 0%, 20%, 0.9);
+	background-color: transparent;
 	color: #fff;
 	content: attr(data-tooltip);
 	text-align: center;
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 1.2;
-	-webkit-transition: opacity 0.5s, visibility 0.5s, background 1s, color 0.5s;
-    transition: opacity 0.5s, visibility 0.5s, background 1s, color 0.5s;
-}
-
-[data-tooltip]:after{
-	position: absolute;
-	bottom: 150%;
-	left: 50%;
-	margin-left: -5px;
-	width: 0;
-	border-top: 5px solid #000;
-	border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-	border-right: 5px solid transparent;
-	border-left: 5px solid transparent;
-	content: " ";
-	font-size: 0;
-	line-height: 0;
 	-webkit-transition: opacity 0.5s, visibility 0.5s, background 1s, color 0.5s;
     transition: opacity 0.5s, visibility 0.5s, background 1s, color 0.5s;
 }
