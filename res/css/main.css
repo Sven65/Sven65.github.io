@@ -186,6 +186,10 @@ html, body{
 		width: 45%;
 		height: fit-content;
 	}
+
+	[data-tooltip]:before{
+		bottom: -200%;
+	}
 }
 
 @media (min-width:961px)  {
