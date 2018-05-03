@@ -186,7 +186,9 @@ html, body{
 		width: 45%;
 		height: fit-content;
 	}
+}
 
+@media(max-width: 321px){
 	[data-tooltip]:before{
 		bottom: -200%;
 	}
