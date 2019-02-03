@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>OSRS High Alch Profit Calculator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://modesta.alexflipnote.xyz/css/modesta.min.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+	</head>
+	<body>
+		<div class="container" id="body-container">
+			<div id="body-holder">
+				<div class="form-container">
+					<form>
+						<div class="row">
+							<div class="one-half column">
+								<label for="runePrice">Nature Rune Price</label>
+								<input
+									class="full-width"
+									type="number"
+									value="230"
+									id="runePrice"
+								/>
+							</div>
+							<div class="one-half column">
+								<label for="itemPrice">Item Price</label>
+								<input
+									class="full-width"
+									type="number"
+									placeholder="100"
+									id="itemPrice"
+								/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="one-half column">
+								<label for="itemAmount">Item Amount</label>
+								<input
+									class="full-width"
+									type="number"
+									value="1"
+									id="itemAmount"
+								/>
+							</div>
+							<div class="one-half column">
+								<label for="alchVal">High Alch Value</label>
+								<input
+									class="full-width"
+									type="number"
+									placeholder="100"
+									id="alchVal"
+								/>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="box-container asbestos-flat message" id="result">
+					<p>I don't know if you'll be making a profit.</p>
+				</div>
+			</div>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
