@@ -5,6 +5,13 @@ const alchValEl = document.querySelector("#alchVal")
 
 const resultEl = document.querySelector('#result')
 
+const profitEl = document.querySelector('#profit')
+const xpResultEl = document.querySelector('#xpResult')
+const initialBuyEl = document.querySelector('#initialBuy')
+const initialRuneBuyEl = document.querySelector('#initialBuy2')
+
+const hiAlchXp = 65
+
 function addClass (el, className) {
 	if (el.classList) {
 		el.classList.add(className)
@@ -43,16 +50,22 @@ function calculateProfit () {
 
 	const profit = itemAmount * singleProfit
 
+	const totalXP = hiAlchXp * itemAmount
+
 	if (profit > 0) {
 		setGreen()
 
-		resultEl.innerHTML = `You'll be making a profit of ${profit}GP.`
+		profitEl.innerHTML = `You'll be making a profit of ${profit}GP.`
 
 	} else {
 		setRed()
 
-		resultEl.innerHTML = `You'll be making a loss of ${profit}GP.`
+		profitEl.innerHTML = `You'll be making a loss of ${profit}GP.`
 	}
+
+	xpResultEl.innerHTML = `You'll receive ${totalXP} XP.`
+	initialBuyEl.innerHTML = `Initial Buy (Without Runes): ${itemAmount * itemPrice}GP.`
+	initialRuneBuyEl.innerHTML = `Initial Buy (With Runes): ${itemAmount * (runePrice + itemPrice)}`
 }
 
 runePriceEl.addEventListener('keydown', calculateProfit)
