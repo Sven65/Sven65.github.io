@@ -21,6 +21,18 @@ function removeClass (el, className) {
 	}
 }
 
+function setRed () {
+	removeClass(resultEl, 'asbestos-flat')
+	removeClass(resultEl, 'emerald-flat')
+	addClass(resultEl, 'alizarin-flat')
+}
+
+function setGreen () {
+	removeClass(resultEl, 'asbestos-flat')
+	removeClass(resultEl, 'alizarin-flat')
+	addClass(resultEl, 'emerald-flat')
+}
+
 function calculateProfit () {
 	const runePrice = parseInt(runePriceEl.value, 10)
 	const itemPrice = parseInt(itemPriceEl.value, 10)
@@ -32,14 +44,12 @@ function calculateProfit () {
 	const profit = itemAmount * singleProfit
 
 	if (profit > 0) {
-		removeClass(resultEl, 'asbestos-flat')
-		addClass(resultEl, 'emerald-flat')
+		setGreen()
 
 		resultEl.innerHTML = `You'll be making a profit of ${profit}GP.`
 
 	} else {
-		removeClass(resultEl, 'asbestos-flat')
-		addClass(resultEl, 'alizarin-flat')
+		setRed()
 
 		resultEl.innerHTML = `You'll be making a loss of ${profit}GP.`
 	}
