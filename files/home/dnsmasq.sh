@@ -2951,3 +2951,4 @@ address=/3d-printer-local.com/192.168.1.134
 address=/3d.printer/192.168.1.134
 address=/chat.inumio.com/192.168.99.101
 address=/local.dev/127.0.0.1
+address=/cucumber.main/192.168.1.99
