@@ -2953,3 +2953,4 @@ address=/chat.inumio.com/192.168.99.101
 address=/local.dev/127.0.0.1
 address=/cucumber.main/192.168.1.99
 address=/tomato.farm/192.168.1.188
+address=/dishwash.er/192.168.1.77
