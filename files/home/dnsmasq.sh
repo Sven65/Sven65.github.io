@@ -912,7 +912,6 @@ address=/amplitude.com/127.0.0.1
 address=/amung.us/127.0.0.1
 address=/anahtars.com/127.0.0.1
 address=/analytics.adpost.org/127.0.0.1
-address=/analytics.google.com/127.0.0.1
 address=/analytics.live.com/127.0.0.1
 address=/analytics.newsinc.com/127.0.0.1
 address=/analytics.yahoo.com/127.0.0.1
